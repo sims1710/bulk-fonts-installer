@@ -41,6 +41,7 @@ def install_all_fonts_in_folder(folder_path):
         install_font_per_user(font_path)
 
 if __name__ == "__main__":
-    FONT_FOLDER = r"C:\\"  #path_folder
+    FONT_FOLDER = r"C:\\"  # Add path to folder here
     install_all_fonts_in_folder(FONT_FOLDER)
+
 
