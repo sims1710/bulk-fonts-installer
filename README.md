@@ -44,4 +44,3 @@ Fonts will be installed for your user account only.
 
 * Add a graphical user interface (GUI) for easier folder selection and installation control.
 * Support `.otf` and other font formats.
-* Add logging and uninstall support.
