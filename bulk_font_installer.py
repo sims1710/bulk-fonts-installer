@@ -28,20 +28,12 @@ def install_font_per_user(font_path):
 
 def install_all_fonts_in_folder(folder_path):
     if not os.path.isdir(folder_path):
-        print(f"[!] Invalid folder: {folder_path}")
-        return
+        raise Exception(f"[!] Invalid folder: {folder_path}")
 
     font_files = [f for f in os.listdir(folder_path) if f.lower().endswith(".ttf")]
     if not font_files:
-        print(f"[!] No .ttf files found in folder: {folder_path}")
-        return
+        raise Exception(f"[!] No .ttf files found in folder: {folder_path}")
 
     for font_file in font_files:
         font_path = os.path.join(folder_path, font_file)
         install_font_per_user(font_path)
-
-if __name__ == "__main__":
-    FONT_FOLDER = r"C:\\"  # Add path to folder here
-    install_all_fonts_in_folder(FONT_FOLDER)
-
-
