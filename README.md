@@ -28,7 +28,7 @@ This means you can install fonts **without admin permissions** and avoid system 
 2. Run the script with Python:
 
 ```bash
-python bulk_font_installer.py
+python ui.py
 ```
 
 Fonts will be installed for your user account only.
@@ -42,5 +42,5 @@ Fonts will be installed for your user account only.
 
 ## Future Plans
 
-* Add a graphical user interface (GUI) for easier folder selection and installation control.
+* Improve current GUI.
 * Support `.otf` and other font formats.
